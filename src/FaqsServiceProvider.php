@@ -56,11 +56,12 @@ class FaqsServiceProvider extends ServiceProvider
 		], 'faqs-database');
 
 		$this->publishes([
-			__DIR__.'/../public/img' => public_path('vendor/faqs/img'),
-			__DIR__.'/../public/css' => public_path('vendor/faqs/css'),
-			__DIR__.'/../public/js' => public_path('vendor/faqs/js'),
+			__DIR__.'/../public' => public_path('vendor/faqs')
+        ],'faqs-public');
+
+        $this->publishes([
 			__DIR__.'/../config/faqs.php' => config_path(''),
-		], 'faqs-public');
+		], 'faqs-config');
 
 		$this->publishes([
 			__DIR__.'/../resources/views'=>resource_path('views/vendor/faqs')

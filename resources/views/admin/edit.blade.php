@@ -10,7 +10,7 @@
 
 @section('breadcrumbs')
 	@parent
-	<li><a href="{{ route('admin-packages') }}"><i class="fa fa-list"></i> List Questions</a></li>
+	<li><a href="{{ route('admin-faqs') }}"><i class="fa fa-list"></i> List Questions</a></li>
 	<li class="active"><span><i class="fa fa-edit"></i> Edit ({{ $faq->question }})</span></li>
 @stop
 
