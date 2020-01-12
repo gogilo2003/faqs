@@ -12,12 +12,12 @@
 @section('content')
 <div class="container">
 	<div class="row">
-		@forelse ($packages as $package)
+		@forelse ($faqs as $faq)
 		<div class="col-md-3">
-			@include('tour-packages::web.inc.package', ['package' => $package])
+			@include('faqs::web.inc.faq', ['faq' => $faq])
 		</div>
 		@empty
-			<p class="text-center col-md-12">No packages listed at the moment</p>
+			<p class="text-center col-md-12">No faqs listed at the moment</p>
 		@endforelse
 	</div>
 </div>
