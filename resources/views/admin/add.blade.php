@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="col-md-12 col-lg-12">
 				<div class="form-group{!! $errors->has('question') ? ' has-error':'' !!}">
-					<label for="question">Title</label>
+					<label for="question">Question</label>
 					<input type="text" autofocus required class="form-control" id="question" name="question" placeholder="Enter question"{!! ((old('question')) ? ' value="'.old('question').'"' : '') !!}>
 					{!! $errors->has('question') ? '<span class="text-danger">'.$errors->first('question').'</span>' : '' !!}
 				</div>
